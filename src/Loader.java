@@ -5,12 +5,22 @@ public class Loader
     {
         Cat murka = new Cat();
         System.out.println("Murka weight: " + murka.getWeight());
+// перекормила
+        while (9000 > murka.getWeight())
+        {
+            murka.feed(50.0);
+            System.out.println("Murka weight: " + murka.getWeight() + murka.getStatus());
 
-        murka.meow();
-        System.out.println("Murka weight: " + murka.getWeight());
+        }
 
         Cat vasya = new Cat ();
         System.out.println("Vasya weight: " + vasya.getWeight());
+//замяукала
+         while (1000 < vasya.getWeight() )
+        {
+            vasya.meow();
+            System.out.println("Vasya weight: " + vasya.getWeight() + vasya.getStatus());
+        }
 
         Cat shedy = new Cat ();
         System.out.println("Shedy weight: " + shedy.getWeight());
@@ -23,6 +33,7 @@ public class Loader
 
         Cat houppy = new Cat();
         System.out.println("Houppy weight: " + houppy.getWeight());
+
 
 
 

@@ -16,10 +16,11 @@ public class Cat
 
     }
 
-    public void meow()
+    public int meow()
     {
         weight = weight - 1;
         System.out.println("Meow");
+        return 0;
     }
 
     public void feed(Double amount)
