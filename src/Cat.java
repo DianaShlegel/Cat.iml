@@ -6,6 +6,7 @@ public class Cat
 
     private double minWeight;
     private double maxWeight;
+    private double allFood;
 
     public Cat()
     {
@@ -22,15 +23,22 @@ public class Cat
         System.out.println("Meow");
         return 0;
     }
+    public void feed(Double amount) { weight = weight + amount;
+        allFood += amount;}
 
-    public void feed(Double amount)
-    {
-        weight = weight + amount;
-    }
+    //съеденная еда
+    public Double getAllFood() {return allFood;}
 
     public void drink(Double amount)
     {
         weight = weight + amount;
+    }
+    //"Сходить в туалет"
+    public  int pee()
+    {
+    weight = weight - (weight/20);
+    System.out.println("Yo-ho-ho!");
+    return  0;
     }
 
     public Double getWeight()
@@ -53,4 +61,5 @@ public class Cat
             return "Playing";
         }
     }
+
 }
